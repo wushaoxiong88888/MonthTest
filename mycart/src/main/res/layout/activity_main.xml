@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mycart.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/rlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/cbAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_sumPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="总计金额"/>
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="合计:"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
